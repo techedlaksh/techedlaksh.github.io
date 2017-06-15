@@ -1,0 +1,115 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 27px;
+}
+
+a {
+  color: #2a6496;
+}
+
+a:hover {
+  color: #2a9692;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 730px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.profile {
+  margin: 0 20px;
+  width: 180px;
+  height: 240px;
+  border-radius: 10px;
+}
+
+.intro {
+  margin: 5px;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 16px;
+}
+
+.contact {
+  margin-top: 32px;  
+}
+
+.contact .title {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.monospace {
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.nav {
+  width: 100%;
+  margin: 0 0 3em 0;
+  padding: 10px 0 0 0;
+  list-style: none;
+  border-bottom: 1px solid #eeeeee; 
+  border-top: 1px solid #eeeeee;
+}
+
+.nav ul {
+  padding-left: 0px;
+  text-align: center;
+}
+
+.nav li {
+  display: inline;
+  padding: 8px 2px;
+}
+
+ul[class="publications"] {
+  list-style-position: inside;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.publications li {
+  margin-top: 5px;
+}
+
+.icon {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+[class*="col-"] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  margin-bottom: 20px;
+}
+
+.social{
+  margin: 0 10px;
+  width: 50px;
+  height: 50px;
+}
