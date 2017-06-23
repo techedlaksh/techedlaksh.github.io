@@ -13,9 +13,9 @@ resume_blog:                    "/blog"
 resume_projects:                    "/projects"
 resume_avatar:                  "true"
 resume_name:                    "Laksh Arora"
-resume_title:                   "Data Scientist"
-resume_contact_email:           "contactme@laksharora.com"
-resume_header_contact_info: "B-129 Hari Nagar, New Delhi | +918447681777 | contactme@laksharora.com"
+resume_title:                   ""
+resume_contact_email:           "laksharora28@gmail.com"
+resume_header_contact_info: "B-129 Hari Nagar, New Delhi | +919871569215 | laksharora28@gmail.com"
 resume_header_intro: "<p>Hello, I am Laksh Arora. I have completed Bachelors of Computer Application from Indraprastha University. I started coding when I was 16 and have come far since then. I am increasingly interested in data science and machine learning. </p>"
 
 # use "yes" to display the email contact button,
