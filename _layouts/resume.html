@@ -43,12 +43,16 @@
         {% endif %}
 
         {% if site.got_skills_to_write_blog == 'yes' %}
-        <a href="https://drive.google.com/open?id=0B-63dRn7lBGXVlpWcy1YekQ3dUU" class="contact-button no-print">Resume</a>
+        <a href="{{ site.blog }}" class="contact-button no-print">Blog</a>
         {% endif %}
 
-<!--         {% if site.made_any_projects == 'yes' %}
+        {% if site.resume_pdf == 'yes' %}
+        <a href="{{ site.resume_link }}" class="contact-button no-print">Resume</a>
+        {% endif %}
+
+        {% if site.made_any_projects == 'yes' %}
         <a href="{{ site.resume_projects }}" class="contact-button no-print">Projects</a>
-        {% endif %} -->
+        {% endif %}
 
         </div>
 
