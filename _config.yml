@@ -10,7 +10,7 @@ sass:
 
 # Resume settings
 resume_blog:                    "/blog"
-resume_link:                    "resume.pdf"    
+resume_link:                    "arora_laksh_datascience_resume.pdf"    
 resume_projects:                    "/projects"
 resume_avatar:                  "true"
 resume_name:                    "Laksh Arora"
