@@ -11,13 +11,14 @@ sass:
 # Resume settings
 resume_blog:                    "/blog"
 resume_link:                    "arora_laksh_datascience_resume.pdf"    
-resume_projects:                    "/projects"
+resume_projects:                "/projects"
 resume_avatar:                  "true"
 resume_name:                    "Laksh Arora"
 resume_title:                   ""
 resume_contact_email:           "laksharora28@gmail.com"
-resume_header_contact_info: "B-129 Hari Nagar, New Delhi | +919871569215 | laksharora28@gmail.com"
-resume_header_intro: "<p>Laksh Arora is Pythonista at heart and has interests in applications of Machine Learning and Computer Vision. Completed his BCA in Computer Science from IPU. Co-organiser of PyDataDelhi meetups. Previously also gave talk at PyDataDelhi community, CSI and other various small meetups. Also spoke at University level about latest work in Machine Learning and won multiple hackathons. Currently Associate Instructor at coding blocks where he is teaching Machine Learning and also collaborating with other enthusiasts over the globe doing independent projects. </p>"
+resume_header_contact_info: "+919871569215 | laksharora28@gmail.com"
+resume_header_intro: "<p>Laksh Arora is a data nerd and has interests in applications of Product Growth, Business Intelligence and Machine Learning. Currently working at Procol Pvt Ltd. as Data Scientist, completed his Bachelors in Computer Application. Committee Member of PyData Delhi Conference, Co-organiser of PyData Delhi Meetups since '17 and in the past, delivered talks at PyCon Italia IX, Local Meetups, Universities, CSI all in love for open-source community. Particiapted and won multiple hackathons, former Associate Intructor at Coding Blocks of Machine Learning Course. Always looking for oppurtunities to collab with other enthusiasts for various projects. </p>"
+resume_old_header: "<p>Laksh Arora is Pythonista at heart and has interests in applications of Machine Learning and Computer Vision. Completed his BCA in Computer Science from IPU. Co-organiser of PyDataDelhi meetups. Previously also gave talk at PyDataDelhi community, CSI and other various small meetups. Also spoke at University level about latest work in Machine Learning and won multiple hackathons. Currently Associate Instructor at coding blocks where he is teaching Machine Learning and also collaborating with other enthusiasts over the globe doing independent projects. </p>"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
