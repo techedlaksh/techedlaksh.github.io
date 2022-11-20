@@ -1,3 +1,31 @@
+@font-face {
+    font-family: "iAWriter";
+    src: url("assets/iAWriterMonoS-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "iAWriter";
+    src: url("assets/iAWriterMonoS-Italic.ttf");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "iAWriter";
+    src: url("assets/iAWriterMonoS-BoldItalic.ttf");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "iAWriter";
+    src: url("assets/iAWriterMonoS-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -5,6 +33,8 @@ html, body {
     left: 0px;
     margin: 0px;
     padding: 0px;
+    font-weight: bold;
+    font-family: "iAWriter", monospace;
 }
 
 @media (orientation: landscape) {
@@ -38,12 +68,13 @@ html, body {
          / 1fr 1fr 1fr;
     }
 }
+
 section#header  {grid-area: header;}
 section#main    {grid-area: main;}
 section#footer  {grid-area: footer;}
 
 .header {
-    background-color: red;
+    background-color: #fdf;
 }
 
 .main {
@@ -54,3 +85,80 @@ section#footer  {grid-area: footer;}
 .footer {
     background-color: green;
 }
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 10px 10px 0px 0px #000;
+}
+
+.header span#home{
+    font-size: 24px;
+    margin-left: 1em;
+}
+
+.header span#home > a {
+    text-decoration-line: underline;
+    text-underline-offset: 0.3em;
+    text-decoration-style: solid;
+    text-decoration-color: #000;
+    text-decoration-thickness: .3em;
+}
+
+.header span#nav {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    font-size: 18px;
+}
+
+.header span#nav .nav-items > a {
+    text-decoration-line: underline;
+    text-underline-offset: 0.2em;
+    text-decoration-style: solid;
+    text-decoration-color: #000;
+    text-decoration-thickness: .1em;
+}
+
+.header > *{
+    flex-grow: 1;
+}
+
+.header span#nav > * {
+    flex-grow: 1;
+    text-align: right;
+    margin-right: 1em;
+}
+
+
+@media (orientation: portrait) {
+    section#page {
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: grid;
+        grid-gap: 0em 1em;
+        grid-template:
+         "header header header" 2fr
+         "main main main" 4fr
+         "footer footer footer" 1fr
+         / 1fr 1fr 1fr;
+    }
+}
+
