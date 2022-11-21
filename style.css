@@ -37,6 +37,27 @@ html, body {
     font-family: "iAWriter", monospace;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.header > span#home {
+    opacity: 60%;
+}
+
+.header > span#home:hover {
+    opacity: 100%;
+}
+
+.header span#nav > * {
+    opacity: 60%;
+}
+
+.header span#nav > *:hover {
+    opacity: 100%;
+}
+
 @media (orientation: landscape) {
     section#page {
         height: 100%;
@@ -86,79 +107,101 @@ section#footer  {grid-area: footer;}
     background-color: green;
 }
 
-.header {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
+@media (orientation: landscape) {
 
-a {
-    color: black;
-    text-decoration: none;
-}
+    a:hover {
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        box-shadow: 10px 10px 0px 0px #000;
+    }
 
-a:hover {
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    box-shadow: 10px 10px 0px 0px #000;
-}
+    .header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-.header span#home{
-    font-size: 24px;
-    margin-left: 1em;
-}
+    .header > * {
+        flex-grow: 1;
+    }
 
-.header span#home > a {
-    text-decoration-line: underline;
-    text-underline-offset: 0.3em;
-    text-decoration-style: solid;
-    text-decoration-color: #000;
-    text-decoration-thickness: .3em;
-}
+    .header span#home{
+        font-size: 24px;
+        margin-left: 1em;
+    }
 
-.header span#nav {
-    display: flex;
-    justify-content: space-around;
-    align-content: flex-end;
-    font-size: 18px;
-}
+    .header span#home > a {
+        text-decoration-line: underline;
+        text-underline-offset: 0.3em;
+        text-decoration-style: solid;
+        text-decoration-color: #000;
+        text-decoration-thickness: .3em;
+    }
 
-.header span#nav .nav-items > a {
-    text-decoration-line: underline;
-    text-underline-offset: 0.2em;
-    text-decoration-style: solid;
-    text-decoration-color: #000;
-    text-decoration-thickness: .1em;
-}
+    .header span#nav {
+        display: flex;
+        justify-content: space-around;
+        align-content: flex-end;
+        font-size: 18px;
+    }
 
-.header > *{
-    flex-grow: 1;
-}
+    .header span#nav .nav-items > a {
+        text-decoration-line: underline;
+        text-underline-offset: 0.2em;
+        text-decoration-style: solid;
+        text-decoration-color: #000;
+        text-decoration-thickness: .1em;
+    }
 
-.header span#nav > * {
-    flex-grow: 1;
-    text-align: right;
-    margin-right: 1em;
-}
+    .header span#nav > * {
+        flex-grow: 1;
+        text-align: right;
+        margin-right: 1em;
+    }
 
+}
 
 @media (orientation: portrait) {
-    section#page {
-        height: 100%;
+
+    .header {
         width: 100%;
-        margin: 0px;
-        padding: 0px;
-        display: grid;
-        grid-gap: 0em 1em;
-        grid-template:
-         "header header header" 2fr
-         "main main main" 4fr
-         "footer footer footer" 1fr
-         / 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
     }
+
+    .header > * {
+        flex-grow: 1;
+    }
+
+    .header span#home{
+        font-size: 64px;
+    }
+
+    .header span#home > a {
+        text-decoration-line: underline;
+        text-underline-offset: 0.2em;
+        text-decoration-style: solid;
+        text-decoration-color: #000;
+    }
+
+    .header span#nav {
+        /* display: flex; */
+        font-size: 38px;
+    }
+
+    .header span#nav .nav-items > a {
+        text-decoration-line: underline;
+        /* text-underline-offset: 0.2em; */
+        /* text-decoration-style: solid; */
+        /* text-decoration-color: #000; */
+        /* text-decoration-thickness: .1em; */
+    }
+
 }
 
