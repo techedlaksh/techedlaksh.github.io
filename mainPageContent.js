@@ -1,3 +1,11 @@
+let latest = '\
+<a href="https://art.tennis/project/0" target="_blank" rel="noopener noreferrer"> [ Love: Tennis ] </a>\
+NFT Collection with \
+<a href="https://martingrasser.com/" target="_blank" rel="noopener noreferrer"> < martin grasser > </a>\
+<a href="https://www.artblocks.io/" target="_blank" rel="noopener noreferrer"> < artblocks.io > </a>\
+<a href="https://www.nittoatpfinals.com/" target="_blank" rel="noopener noreferrer"> < ATP > </a>\
+    </a>'
+// latest = ''
 let [p1, p2, p3, p4] = ['', '', '', '']
 
 p1 = 'I write code for my own entertainment and the love I have for it. Professionally, I am a Software Engineer,\
@@ -33,9 +41,16 @@ ${p2} <br> <br>
 ${p3} <br> <br>
 ${p4} <br> <br>
 `
-let test = 'Content'
 let main = document.getElementById('main')
 let contentPara =  document.createElement('p')
-contentPara.innerHTML = content
+if (latest != '') {
+    console.log('latest')
+    let latestPara =  document.createElement('p')
+    latestPara.setAttribute("class", "latest")
+    latestPara.innerHTML += 'Latest: '
+    latestPara.innerHTML += latest
+    contentPara.appendChild(latestPara)
+}
+contentPara.innerHTML += content
 main.appendChild(contentPara)
 
