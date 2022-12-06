@@ -4,7 +4,11 @@ NFT Collection with \
 <a href="https://martingrasser.com/" target="_blank" rel="noopener noreferrer"> < martin grasser > </a>\
 <a href="https://www.artblocks.io/" target="_blank" rel="noopener noreferrer"> < artblocks.io > </a>\
 <a href="https://www.nittoatpfinals.com/" target="_blank" rel="noopener noreferrer"> < ATP > </a>\
-    </a>'
+'
+let latestPS = '\
+you can checkout the whole collection at \
+<a href="https://opensea.io/collection/love-tennis-art-collection" target="_blank" rel="noopener noreferrer"> < OpenSea > </a>\
+'
 // latest = ''
 let [p1, p2, p3, p4] = ['', '', '', '']
 
@@ -45,10 +49,14 @@ let main = document.getElementById('main')
 let contentPara =  document.createElement('p')
 if (latest != '') {
     console.log('latest')
-    let latestPara =  document.createElement('p')
+    let latestPara =  document.createElement('div')
     latestPara.setAttribute("class", "latest")
     latestPara.innerHTML += 'Latest: '
     latestPara.innerHTML += latest
+    let latestPSElement =  document.createElement('div')
+    latestPSElement.setAttribute("class", "latestPS")
+    latestPSElement.innerHTML += latestPS
+    latestPara.appendChild(latestPSElement)
     contentPara.appendChild(latestPara)
 }
 contentPara.innerHTML += content

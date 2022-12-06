@@ -123,9 +123,10 @@ section#footer  {grid-area: footer;}
 }
 
 .latest {
-    text-align: center;
+    text-align: left;
     background-color: #F1EDE4;
-    /* margin-bottom: unset; */
+    width: 100%;
+    margin-bottom: 1em;
 }
 
 @media (orientation: landscape) {
@@ -192,6 +193,11 @@ section#footer  {grid-area: footer;}
     .footer {
         margin: 1em;
     }
+
+    .latestPS {
+        font-size: .8em;
+        text-align: right;
+    }
 }
 
 @media (orientation: portrait) {
@@ -254,6 +260,11 @@ section#footer  {grid-area: footer;}
         margin-left: 1em;
         margin-bottom: 1em;
         font-size: 20px;
+    }
+
+    .latestPS {
+        font-size: .6em;
+        text-align: right;
     }
 }
 
