@@ -1,1 +1,1 @@
-Simple WebPage about Laksh Arora
+Home for me, my career and my brain over the Internet
