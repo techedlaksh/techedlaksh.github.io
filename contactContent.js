@@ -4,6 +4,8 @@ let twitter = 'twitter => <a href="https://twitter.com/techedlaksh" target="_bla
 let github = 'github => <a href="https://github.com/techedlaksh" target="_blank" rel="noopener noreferrer"> [ techedlaksh ]</a>'
 let codementor = 'codementor => <a href="https://codementor.io/@techedlaksh" target="_blank" rel="noopener noreferrer"> [ techedlaksh ]</a>'
 let linkedin = 'linkedin => <a href="https://linkedin.com/in/techedlaksh" target="_blank" rel="noopener noreferrer"> [ techedlaksh ]</a>'
+// add dev to links when i start publishing bytes / TIL code / content over at dev.to
+let devto = 'dev.to => <a href="https://linkedin.com/in/techedlaksh" target="_blank" rel="noopener noreferrer"> [ techedlaksh ]</a>'
 
 let contactContent = `
 ${contactText} <br> <br>
