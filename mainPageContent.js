@@ -1,12 +1,21 @@
 let [p1, p2, p3, p4] = ['', '', '', '']
 
-p1 = 'I write code for my own entertainment and the love I have for it. Professionally, I am a Software Engineer, mentor and personally, an <a href = "https://en.wikipedia.org/wiki/Existentialism"> existensial thinker.</a>'
+p1 = 'I write code for my own entertainment and the love I have for it. Professionally, I am a Software Engineer,\
+    <a href="https://codementor.io/@techedlaksh" target="_blank" rel="noopener noreferrer"> mentor </a> and personally,\
+    an <a href = "https://en.wikipedia.org/wiki/Existentialism" target="_blank" rel="noopener noreferrer"> existensial thinker.</a>'
 
-p2 = ' Currently I am working with Martin Grasser at his And Repeat Studio as a Creative Developer, creating Generative Art and bringing art projects to digital world and a screen near you. Over the years, my work has stretched across art with code, playing with data and teaching machine the meaning of real world data. In my career I have had wore many different hats such as data scientist, data engineering, full stack engineering and ofcourse an unpaid intern.'
+p2 = ' Currently I am working with \
+<a href="https://martingrasser.com" target="_blank" rel="noopener noreferrer"> Martin Grasser </a> at his \
+<a href="https://andrepeat.com" target="_blank" rel="noopener noreferrer"> And Repeat Studio </a> as a Creative Developer, creating \
+<a href="https://www.artblocks.io/user/0x616fc752e4d9503b1b65b51f1113003ab2256ce9" target="_blank" rel="noopener noreferrer"> Generative Art </a> and bringing art projects to digital world and a screen near you. Over the years, my work has stretched across art with code, playing with data and teaching machine the meaning of real world data. In my career I have had many different roles such as data scientist, data engineering, full stack engineering and ofcourse an unpaid intern and each position was intriguing as the other.'
 
-p3 = 'In today\'s time, I am exploring 3D space and it\'s relation with our daily viewing uninteresting 2D flat screens, learning maths and physics (all that fun stuff) and subjectivity of the art world & it\'s art, tinkering around Game Mechanics of games. Oh also some amazing Space stuff (Earth is really a pea in ocean).'
+p3 = 'In today\'s time, I am exploring 3D space and it\'s relation with our daily viewing uninteresting 2D flat screens, learning maths, physics (all that fun stuff) and subjectivity of the art world & it\'s art, tinkering around Game Mechanics. Oh also some amazing Space stuff (Earth is really a pea in ocean).'
 
-p4 = 'I get excited about disruptive things for instance Generative Art making ways in the form of NFT or Rust being dubbed as better than C/C++ and anything that is a foundation such as Screen-based Text Editors (vi[m]) or Neural Network actually first came around 1943 and not a 21st Century mircale. Also I really love travelling.'
+p4 = 'I get excited about disruptive things for instance \
+<a href="https://artblocks.io" target="_blank" rel="noopener noreferrer"> Generative Art is making waves in the form of NFT</a> or \
+<a href="https://hn.algolia.com/?q=rust" target="_blank" rel="noopener noreferrer"> Everything Rust, Everywhere All At Once </a> and anything that is a foundation such as \
+<a href="https://en.wikipedia.org/wiki/Vim_(text_editor)" target="_blank" rel="noopener noreferrer"> Screen-based Text Editors (vi[m]) </a> or \
+<a href="https://en.wikipedia.org/wiki/History_of_artificial_neural_networks" target="_blank" rel="noopener noreferrer"> Neural Network actually first came around 1943 and not a 21st Century mircale</a>. Also I really love travelling.'
 
 'Over the years, my work has stretched across art with code, playing with data and teaching machine the meaning of real world data. Currently I am working with Martin Grasser at his And Repeat Studio as a Creative Developer (there needs to be more creative work in tech), creating Generative Art and bringing art projects to life.'
 
