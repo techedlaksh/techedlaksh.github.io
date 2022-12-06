@@ -67,10 +67,10 @@ a {
         display: grid;
         grid-gap: 0em 1em;
         grid-template:
-         "header header header" 2fr
-         ".      main        ." 4fr
-         "footer footer footer" 1fr
-         / 1fr 2fr 1fr;
+        "header header header" 1.5fr
+        ".      main        ." 20fr
+        "footer footer footer" 1fr
+        / 1fr 2fr 1fr;
     }
 }
 
@@ -83,10 +83,10 @@ a {
         display: grid;
         grid-gap: 0em 1em;
         grid-template:
-         "header header header" 2fr
-         "main main main" 4fr
-         "footer footer footer" 1fr
-         / 1fr 1fr 1fr;
+        "header header header" 2fr
+        "main main main" 4fr
+        "footer footer footer" 1fr
+        / 1fr 1fr 1fr;
     }
 }
 
@@ -143,6 +143,7 @@ section#footer  {grid-area: footer;}
     }
 
     .header span#nav {
+        background-color: yellow;
         display: flex;
         justify-content: space-around;
         align-content: flex-end;
@@ -158,6 +159,7 @@ section#footer  {grid-area: footer;}
     }
 
     .header span#nav > * {
+        background-color: red;
         flex-grow: 1;
         text-align: right;
         margin-right: 1em;
