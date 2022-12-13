@@ -1,3 +1,6 @@
+v1.0
+- added empty .nojekyll file at root for github to not use jekyll build process.
+
 v0.1
  - CSS Grid added as the base of the website
  - Addition of Landscape and Portrait grid template
