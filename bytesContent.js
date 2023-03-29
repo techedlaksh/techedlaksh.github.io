@@ -14,13 +14,13 @@ function addByte(title='', link='') {
   return article
 }
 
-byteText += addByte(
-  'Byte Starter', 
-  'byte_starter'
-)
+// byteText += addByte(
+//   'Byte Starter', 
+//   'byte_starter'
+// )
 
 byteText += addByte(
-  'Oh My Terminal: A ZSH Story', 
+  'Oh My Setup: A Config Story', 
   'oh_my_terminal'
 )
 
