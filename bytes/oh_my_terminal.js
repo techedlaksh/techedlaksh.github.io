@@ -1,3 +1,16 @@
+function orderedList(seed, increase=true) {
+    !orderedListConfig[seed] && (orderedListConfig[seed] = 0)
+    if (!increase) return `<a href="#byteMention-${orderedListConfig[seed]}" id="mention-${orderedListConfig[seed]}"><<<</a>`
+    return orderedListConfig[seed] += 1
+}
+
+function makeSup(content) {
+    content = `<a href="#mention-${content}" id="byteMention-${content}" style="scroll-margin-top: 5em;"><sup>[${content}]</sup></a>`
+    return content
+}
+
+let orderedListConfig = {}
+
 let title = ''
 let meta = ''
 
@@ -37,12 +50,15 @@ p4 = 'I get excited about disruptive things for instance \
 'I am currently working with Martin Grasser at And Repeat Studio. In the past I have shared my titles from data scientist, data engineering, full stack engineer and ofcourse an unpaid intern'
 
 p1 = '\
-    First and foremost, this particular byte reflect my own setup and is written specifically for future me. If you are reading this then probably some "sentient" search engine has deemed this byte useful. Happy Reading.\
+    First and foremost, this particular byte reflect my own setup and is written specifically for future me. If you are reading this then probably some "sentient" search engine has deemed this byte useful. Happy Reading!!\
 '
 
-p2 = '\
-    Ever since I first ran the command `htop` on my Ubuntu 13.10 back in 2014, I have been hooked on Terminals and their flexibility to run almost everything and as a professional nerd, I try to keep my terminal setup custom to my needs which now involves basically becoming a config manager yourself to manage other configs which manages your setup.\
-'
+p2 = `
+    Ever since I first ran the command \`htop\` on my Ubuntu 13.10 back in 2014,
+    I have been hooked on Terminals and their flexibility to run almost everything and as a professional nerd,
+    I try to keep my terminal setup custom${makeSup(orderedList('byteMentions'))} to my needs which now involves basically becoming a config manager 
+    yourself to manage other configs which manages your setup.
+`
 
 function createLink(content='', link='', lineBreak=false) {
     return `<a href=" ${link} " target="_blank" rel="noopener noreferrer"> ${content}</a>${lineBreak? "<br>": ""}`
@@ -99,8 +115,8 @@ function point(style) {
     return config[style] || ''
 }
 
-p4 = `\
-    I am gonna keep this short and concise on this as there are lot of great explainations out on Internet about these. <br>
+p4 = `
+    I am gonna keep this short and concise on this as there are lot of great explainations${makeSup(orderedList('byteMentions'))} out on Internet about these. <br>
     ${stylise(point('brackets'), 'bold')} ${stylise('Karabiner-Element', 'it')} is being used to remap my keys on external keyboards to a standard mac style key setup as well as some quirks like mapping my capslock to esc or to map my mouse to keyboard for easy gameplace <br>
     ${stylise(point('brackets'), 'bold')} ${stylise('Raycast', '')} is a a great, extensible Open Source launcher and an alternative to the default Spotlight in MacOS. I have been using raycast for my daily task of spotlight as well as it's community based extensions such as ${createLink('Rectangle', '')} window management,
     custom scripts for launching Alacritty with the respective config, different hotkeys, aliases and many other rich features. <br>
@@ -131,9 +147,9 @@ function createClassString(classes) {
     return classes.join(' ')
 }
 
-function createElement(content, classString) {
-    let el =  document.createElement('div')
-    el.setAttribute("class", classString)
+function createElement(content, classString, tag='div') {
+    let el =  document.createElement(tag)
+    classString && el.setAttribute("class", classString)
     el.innerHTML += content
     return el
 }
@@ -168,6 +184,11 @@ let metaElement = createElement(
     )
 )
 
+let mentions = `
+    ${orderedList('mentions')}.  I like to fiddle around and do dumb shit. Use this ${createLink('zsh prompt expansion manual', 'https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html#Prompt-Expansion')} and you can go really crazy on your terminal prompt. ${orderedList('mentions', false)} <br>
+    ${orderedList('mentions')}.  Check ${createLink('this', 'https://arslan.io/2018/02/05/gpu-accelerated-terminal-alacritty/')} and ${createLink('this', 'https://arvdl.github.io/posts/zsh-tmux-alacrity/')} article out for some indepth guide on terminal setup. ${orderedList('mentions', false)} <br>
+`
+
 titleElement.appendChild(subtextElement)
 titleElement.appendChild(metaElement)
 contentPara.appendChild(titleElement)
@@ -175,4 +196,12 @@ contentPara.appendChild(titleElement)
 contentPara.innerHTML += content
 main.appendChild(contentPara)
 
+let lineBreak = document.createElement('hr')
+lineBreak.style.width = "100%"
 
+let mentionElement = document.createElement('p')
+mentionElement.style.width = "100%"
+mentionElement.innerHTML += mentions
+
+main.appendChild(lineBreak)
+main.appendChild(mentionElement)
