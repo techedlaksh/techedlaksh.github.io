@@ -20,8 +20,13 @@ function addByte(title='', link='') {
 // )
 
 byteText += addByte(
+  'Have you got time to play with Canvas Text?', 
+  'canvas_text'
+)
+
+byteText += addByte(
   'Oh My Setup: A Config Story', 
-  'oh_my_terminal'
+  'oh_my_setup'
 )
 
 byteText += addByte()

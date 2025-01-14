@@ -9,3 +9,17 @@
 }
 
 .meta {}
+
+.main {
+  flex-direction: column;
+}
+
+.image {
+  display: flex;
+  margin: 10px;
+  width: 50%;
+}
+
+.image img {
+  width: 100%;
+}
