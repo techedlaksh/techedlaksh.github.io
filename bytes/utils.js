@@ -10,7 +10,7 @@ function makeSup(content='') {
 }
 
 function createLink(content='', link='', lineBreak=false) {
-    return `<a href="${link}" target="_blank" rel="noopener noreferrer"> ${content}</a>${lineBreak? "<br>": ""}`
+    return `<a href="${link}" target="_blank" rel="noopener noreferrer">${content}</a>${lineBreak? "<br>": ""}`
 }
 
 function addSpace(mode='') {
@@ -24,7 +24,9 @@ function addSpace(mode='') {
 
 function stylise(text='', style='') {
     let config = {
-        'bold' : `<b> ${text} </b>`
+        'bold' : `<b>${text}</b>`,
+        'strike' : `<del>${text}</del>`,
+        'new' : `<ins>${text}</ins>`,
     }
 
     return config[style] || text

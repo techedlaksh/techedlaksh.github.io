@@ -65,6 +65,10 @@ p5 = `
     All of my config files can be found on my ${createLink('dotfiles', 'https://github.com/techedlaksh/dotfiles')} github repo.
 `
 
+p5 = `
+    All of my config files can be found on my ${stylise(createLink('dotfiles'), 'strike')}${stylise(createLink('temp-config', 'https://github.com/techedlaksh/temp-config'), 'new')} github repo.
+`
+
 let content = `
 ${p1} <br> <br>
 ${p2} <br> <br>

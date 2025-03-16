@@ -18,6 +18,11 @@ let latestPS = '\
 you can checkout my journey in this \
 <a href="bytes/canvas_text.html" target="" rel="noopener noreferrer"> < Blog > </a>\
 '
+latestPS = '\
+you can checkout my updates\
+<a href="https://x.com/techedlaksh" target="" rel="noopener noreferrer"> < X/formally Twitter > </a>\
+'
+
 // latest = ''
 let [p1, p2, p3, p4] = ['', '', '', '']
 
