@@ -34,6 +34,8 @@ p4 = `
 `
     // ${addImage('canvas_text_playground.gif')}
 
+p5 = `${addIframe('https://lak.sh/canvas-text')}`
+
 let content = `
 ${p1} <br> <br>
 ${p2} <br> <br>
@@ -43,6 +45,10 @@ ${p5} <br> <br>
 `
 let main = document.getElementById('main')
 let contentPara =  document.createElement('p')
+
+function addIframe(url) {
+    return `<iframe src="${url}" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:200px;width:100%;border:none;overflow:hidden;"></iframe>`
+}
 
 function createClassString(classes) {
     return classes.join(' ')

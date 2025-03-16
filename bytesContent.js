@@ -4,7 +4,7 @@ function createLink(link) {
     return link && 'bytes/' + link + '.html'
 }
 
-function addByte(title='', link='') {
+function makeByteElement(title='', link='') {
     let article = ''
     let verticalGap = title && '<br><br>'
     let linkUpdated = createLink(link)
@@ -19,15 +19,25 @@ function addByte(title='', link='') {
 //   'byte_starter'
 //))
 
-byteList.push(addByte(
+byteList.push(makeByteElement(
     'Oh My Terminal: Config files and more', 
     'oh_my_terminal'
 ))
 
-byteList.push(addByte(
-'Have you got time to play with Canvas Text?', 
-'canvas_text'
+//byteList.push(makeByteElement(
+//    'Have you got time to play with Canvas Text?', 
+//    'canvas_text'
+//))
+
+byteList.push(makeByteElement(
+    'What is a Browser?', 
+    'what_is_a_browser'
 ))
+
+//byteList.push(addByte(
+//'Launch of my joyfulcards.me', 
+//'canvas_text'
+//))
 
 //byteList.push(addByte(
 //    'Vera Molnar and my time on her last project',
