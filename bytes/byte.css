@@ -23,3 +23,50 @@
 .image img {
   width: 100%;
 }
+
+.html-editor-demo {
+    width: 100%;
+    height: 10em;
+    margin: 10px 0 10px 0;
+    padding: 0px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.html-editor-toolbar {
+    height: 15%;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.html-editor-content {
+    border: 1px solid black;
+    width: 100%;
+    height: 1fr;
+    flex-grow: 1;
+    padding: 10px 0 0 10px;
+}
+
+.html-editor-toolbar-btn {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-size: 0.75em;
+  cursor: pointer;
+  outline: inherit;
+  padding: 0 10px 0 10px;
+  border: 1px solid black;
+}
+
+.html-editor-toolbar-btn:hover {
+  border: 1px solid white;
+  background: black;
+  color: white;
+}
+
+.html-editor-toolbar-color-btn {
+    width: 30px;
+}

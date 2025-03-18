@@ -134,6 +134,52 @@ contentPara.appendChild(titleElement)
 contentPara.innerHTML += content
 main.appendChild(contentPara)
 
+function format(command, value) {
+    document.execCommand(command, false, value)
+}
+
+let htmlEditorDemo = document.createElement('div')
+htmlEditorDemo.setAttribute("class", "html-editor-demo")
+
+let htmlEditorToolbar = document.createElement('div')
+htmlEditorToolbar.setAttribute("class", "html-editor-toolbar")
+
+let boldButton = document.createElement("button")
+boldButton.setAttribute("class", "html-editor-toolbar-btn")
+boldButton.innerText = "Bold"
+boldButton.onclick = () => format('bold')
+
+let italicButton = document.createElement("button")
+italicButton.setAttribute("class", "html-editor-toolbar-btn")
+italicButton.innerText = "Italic"
+italicButton.onclick = () => format('italic')
+
+let underlineButton = document.createElement("button")
+underlineButton.setAttribute("class", "html-editor-toolbar-btn")
+underlineButton.innerText = "Underline"
+underlineButton.onclick = () => format('underline')
+
+let colorButton = document.createElement("button")
+colorButton.setAttribute("class", "html-editor-toolbar-btn html-editor-toolbar-color-btn")
+colorButton.style.background = "#ff0000"
+colorButton.onclick = () => format('foreColor', "#ff0000")
+
+
+htmlEditorToolbar.appendChild(boldButton)
+htmlEditorToolbar.appendChild(italicButton)
+htmlEditorToolbar.appendChild(underlineButton)
+htmlEditorToolbar.appendChild(colorButton)
+
+
+let htmlEditorContent = document.createElement('div')
+htmlEditorContent.setAttribute("class", "html-editor-content")
+htmlEditorContent.setAttribute("contenteditable", true)
+htmlEditorContent.innerText += `Click me.\n Hello, this is a demo of a simple Rich Text Style in HTML based Editors`
+
+htmlEditorDemo.appendChild(htmlEditorToolbar)
+htmlEditorDemo.appendChild(htmlEditorContent)
+main.appendChild(htmlEditorDemo)
+
 let lineBreak = document.createElement('hr')
 lineBreak.style.width = "100%"
 
