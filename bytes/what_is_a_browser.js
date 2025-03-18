@@ -63,22 +63,22 @@ p1 = `
     I yet have not even shared at the marvelous in-built tools that are made for developers
     only which are surprisingly really really good. At this point I do think, there should
     exist a developers-debug-only Browser that is from ground-up to accelerate the development
-    process.
-
-    ${addBreak(2)}
-
+    process.`
+p2 = `
+    Anecdote:${addBreak(1)}
     I asked AI to read my blog and create an almost poetic one line statement and 
     this what it came up with:
     ${addBreak(1)}
-    Once a humble window to peek at static pages, the browser’s morphed—now a 
-    sprawling beast, hoarding tabs, slurping data, and whispering ads, less a tool, 
-    more a mirror of our restless, fractured minds.
+    ${stylise("Once a humble window to peek at static pages, the browser’s morphed—now a\
+    sprawling beast, hoarding tabs, slurping data, and whispering ads, less a tool,\
+    more a mirror of our restless, fractured minds.", "italic")}
 
 `
 
 let content = `
 ${p1} <br> <br>
 `
+
 let main = document.getElementById('main')
 let contentPara =  document.createElement('p')
 
@@ -127,6 +127,10 @@ mentions = `
     Upcoming: How does browser actually works under the hood ?
 `
 
+mentions = `
+    ${p2} <br> <br>
+`
+
 titleElement.appendChild(subtextElement)
 titleElement.appendChild(metaElement)
 contentPara.appendChild(titleElement)
@@ -147,35 +151,83 @@ htmlEditorToolbar.setAttribute("class", "html-editor-toolbar")
 let boldButton = document.createElement("button")
 boldButton.setAttribute("class", "html-editor-toolbar-btn")
 boldButton.innerText = "Bold"
-boldButton.onclick = () => format('bold')
+boldButton.onclick = () => format("bold")
 
 let italicButton = document.createElement("button")
 italicButton.setAttribute("class", "html-editor-toolbar-btn")
 italicButton.innerText = "Italic"
-italicButton.onclick = () => format('italic')
+italicButton.onclick = () => format("italic")
 
 let underlineButton = document.createElement("button")
 underlineButton.setAttribute("class", "html-editor-toolbar-btn")
 underlineButton.innerText = "Underline"
-underlineButton.onclick = () => format('underline')
+underlineButton.onclick = () => format("underline")
 
-let colorButton = document.createElement("button")
-colorButton.setAttribute("class", "html-editor-toolbar-btn html-editor-toolbar-color-btn")
-colorButton.style.background = "#ff0000"
-colorButton.onclick = () => format('foreColor', "#ff0000")
+const colors = ["aquamarine", "bisque", "gold", "coral", "crimson", "black"]
+const colorBtns = []
+for (let color of colors) {
+    let colorButton = document.createElement("button")
+    colorButton.setAttribute("class", " html-editor-toolbar-btn html-editor-toolbar-color-btn")
+    colorButton.style.background = color
+    colorButton.onclick = () => format("foreColor", color)
+    colorBtns.push(colorButton)
+}
+
+let leftAlignButton = document.createElement("button")
+leftAlignButton.setAttribute("class", "html-editor-toolbar-btn")
+leftAlignButton.innerText = "Left"
+leftAlignButton.onclick = () => {
+    document.getElementsByClassName("html-editor-content")[0].focus()
+    format("selectAll")
+    format("justifyLeft")
+    document.getElementsByClassName("html-editor-content")[0].blur()
+}
+
+let centerAlignButton = document.createElement("button")
+centerAlignButton.setAttribute("class", "html-editor-toolbar-btn")
+centerAlignButton.innerText = "Center"
+centerAlignButton.onclick = () => {
+    document.getElementsByClassName("html-editor-content")[0].focus()
+    format("selectAll")
+    format("justifyCenter")
+    document.getElementsByClassName("html-editor-content")[0].blur()
+}
+
+let rightAlignButton = document.createElement("button")
+rightAlignButton.setAttribute("class", "html-editor-toolbar-btn")
+rightAlignButton.innerText = "Right"
+rightAlignButton.onclick = () => {
+    document.getElementsByClassName("html-editor-content")[0].focus()
+    format("selectAll")
+    format("justifyRight")
+    document.getElementsByClassName("html-editor-content")[0].blur()
+}
+
+let copyButton = document.createElement("button")
+copyButton.setAttribute("class", "html-editor-toolbar-btn")
+copyButton.innerText = "Copy"
+copyButton.onclick = () => format("copy")
 
 
+
+htmlEditorToolbar.appendChild(leftAlignButton)
+htmlEditorToolbar.appendChild(centerAlignButton)
+htmlEditorToolbar.appendChild(rightAlignButton)
+colorBtns.forEach(btn => htmlEditorToolbar.appendChild(btn))
 htmlEditorToolbar.appendChild(boldButton)
 htmlEditorToolbar.appendChild(italicButton)
 htmlEditorToolbar.appendChild(underlineButton)
-htmlEditorToolbar.appendChild(colorButton)
-
 
 let htmlEditorContent = document.createElement('div')
 htmlEditorContent.setAttribute("class", "html-editor-content")
 htmlEditorContent.setAttribute("contenteditable", true)
-htmlEditorContent.innerText += `Click me.\n Hello, this is a demo of a simple Rich Text Style in HTML based Editors`
+htmlEditorContent.innerText += `\
+    Click me.\nHello, this is a demo of a simple Rich Text Style in HTML based Editors.\n\
+    Select the text and stylise it using the toolbar.\
+`
 
+htmlEditorDemo.innerHTML += `browser power — mini editor experiment ${addBreak(1)}`
+htmlEditorDemo.innerHTML += `this only took me 30 mins to make with little html and js (aside from making it look decent)${addBreak(2)}`
 htmlEditorDemo.appendChild(htmlEditorToolbar)
 htmlEditorDemo.appendChild(htmlEditorContent)
 main.appendChild(htmlEditorDemo)

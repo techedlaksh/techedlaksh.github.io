@@ -27,6 +27,7 @@ function stylise(text='', style='') {
         'bold' : `<b>${text}</b>`,
         'strike' : `<del>${text}</del>`,
         'new' : `<ins>${text}</ins>`,
+        'italic' : `<i>${text}</i>`,
     }
 
     return config[style] || text
