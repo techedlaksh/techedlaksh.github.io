@@ -35,7 +35,7 @@ function stylise(text='', style='') {
 
 function point(style='') {
     let config = {
-        'brackets': '&lt;&gt;'
+        'brackets': '&lt;&gt;',
     }
 
     return config[style] || ''
