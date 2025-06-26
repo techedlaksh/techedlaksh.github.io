@@ -22,29 +22,26 @@ console.log('work javascript')
 
 let workGrid = ``
 let works = [
-    {title: `Portraits`, subtext: `Subtext for the work`, thumbnail: ``},
-    {title: `Work 2`, subtext: `Subtext for the work`, thumbnail: ``},
-    {title: `Work 3`, subtext: `Subtext for the work`, thumbnail: ``},
-    {title: `Work 4`, subtext: `Subtext for the work`, thumbnail: ``},
-    {title: `Work 5`, subtext: `Subtext for the work`, thumbnail: ``},
-    {title: `Work 6`, subtext: `Subtext for the work`, thumbnail: ``},
-    {title: `Work 7`, subtext: `Subtext for the work`, thumbnail: ``},
+    {title: `Portraits`, subtext: `Subtext for the work`, thumbnail: `portraits_on_the_wall2.png`, size: 'ar-height'},
+    {title: `Themes and Variations`, subtext: `Subtext for the work`, thumbnail: `themes_and_variations.png`, size: 'ar-square'},
+    {title: `Work 3`, subtext: `Subtext for the work`, thumbnail: `portraits_on_the_wall2.png`, size: 'ar-width'},
+    {title: `Work 4`, subtext: `Subtext for the work`, thumbnail: ``, size: 'ar-square'},
+    {title: `Work 5`, subtext: `Subtext for the work`, thumbnail: ``, size: 'ar-square'},
+    {title: `Work 6`, subtext: `Subtext for the work`, thumbnail: ``, size: 'ar-square'},
+    {title: `Work 7`, subtext: `Subtext for the work`, thumbnail: ``, size: 'ar-square'},
 ]
 
 let workElement = document.getElementById('main')
 let gridElement = createElement('', 'work-grid')
 
 works.forEach((work) => {
-    const card = createElement('', 'card')
+    const card = createElement('', createClassString(['card', work.size]))
     const cardMedia = createElement('', 'card-media')
     const cardText = createElement( '', 'card-text')
 
-    const image = createElement('portraits_on_the_wall.png', 'card-image', 'img')
-    image.style.width = '100%'
-    image.style.height = '100%'
-    image.style.objectFit = 'fill'
+    const image = createElement(work.thumbnail, createClassString(['card-img']), 'img')
     const title = createElement('', 'card-text-title')
-    title.innerHTML = work.title
+    title.innerHTML = `${work.title},`
     const subtext = createElement('', 'card-text-subtext')
     subtext.innerHTML = work.subtext
 
