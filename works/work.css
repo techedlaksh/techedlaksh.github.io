@@ -1,0 +1,14 @@
+@import url("../style.css");
+
+.work-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.card {
+   flex: 0 50%; 
+}
