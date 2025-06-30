@@ -22,10 +22,13 @@ console.log('work javascript')
 
 let workGrid = ``
 let works = [
-    {title: `Work 1`, subtext: `Subtext for the work`, thumbnail: ``},
+    {title: `Portraits`, subtext: `Subtext for the work`, thumbnail: ``},
     {title: `Work 2`, subtext: `Subtext for the work`, thumbnail: ``},
     {title: `Work 3`, subtext: `Subtext for the work`, thumbnail: ``},
     {title: `Work 4`, subtext: `Subtext for the work`, thumbnail: ``},
+    {title: `Work 5`, subtext: `Subtext for the work`, thumbnail: ``},
+    {title: `Work 6`, subtext: `Subtext for the work`, thumbnail: ``},
+    {title: `Work 7`, subtext: `Subtext for the work`, thumbnail: ``},
 ]
 
 let workElement = document.getElementById('main')
@@ -36,10 +39,13 @@ works.forEach((work) => {
     const cardMedia = createElement('', 'card-media')
     const cardText = createElement( '', 'card-text')
 
-    const image = createElement('', 'card-image', 'img')
-    const title = document.createElement('div')
+    const image = createElement('portraits_on_the_wall.png', 'card-image', 'img')
+    image.style.width = '100%'
+    image.style.height = '100%'
+    image.style.objectFit = 'fill'
+    const title = createElement('', 'card-text-title')
     title.innerHTML = work.title
-    const subtext = document.createElement('div')
+    const subtext = createElement('', 'card-text-subtext')
     subtext.innerHTML = work.subtext
 
     cardMedia.appendChild(image)

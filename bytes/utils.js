@@ -55,8 +55,12 @@ function createClassString(classes=[]) {
 
 function createElement(content, classString, tag='div') {
     let el =  document.createElement(tag)
-    classString && el.setAttribute("class", classString)
-    el.innerHTML += content
+    classString && el.setAttribute('class', classString)
+    if (tag == 'img') {
+        el.setAttribute('src', `../assets/${content}`)
+    } else {
+        el.innerHTML += content
+    }
     return el
 }
 
@@ -64,9 +68,11 @@ function addBreak(n=0) {
     return '<br>'.repeat(n)
 }
 
-function addImage(name) {
+function addImage(name, className='') {
     let imgElem = `
-        <div class='image'><br><img src='../assets/${name}' alt='${name}'/></div>
+        <div class='image'>
+        <br><img src='../assets/${name}' alt='${name}' class='${className}'/>
+        </div>
     `
     return imgElem
 }
