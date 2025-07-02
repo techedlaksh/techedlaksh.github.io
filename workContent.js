@@ -23,6 +23,13 @@ console.log('work javascript')
 let workGrid = ``
 let works = [
     {
+        title: `JoyfulCards`,
+        subtext: `Subtext for the work`,
+        thumbnail: `joyfulcards1.gif`,
+        size: 'ar-width',
+        subpage: 'love',
+    },
+    {
         title: `Portraits`,
         subtext: `Subtext for the work`,
         thumbnail: `portraits_on_the_wall2.png`,
