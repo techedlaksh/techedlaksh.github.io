@@ -15,9 +15,15 @@
         / 1fr 3fr 1fr;
     }
 
+    section#main {
+        width: 100%;
+        height: 100%;
+    }
+
     .work-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 650px;
         grid-gap: 6em 6em;
         margin: 1em;
 
@@ -49,29 +55,50 @@
     }
 
     .card:nth-child(2) .card-img {
-        transform: translate(0px, 100px) scale(1.3);
+        transform: translate(0px, 100px) scale(1.5);
     }
 
-    /* .ar-height { */
-    /*     height: 100%; */
-    /*     width: auto; */
-    /* } */
-    /**/
-    /* .ar-square { */
-    /*     height: 100%; */
-    /*     width: 100%; */
-    /* } */
-    /**/
-    /* .ar-width { */
-    /*     width: 100%; */
-    /*     height: auto; */
-    /* } */
+    .work-page {
+        width: 100%;
+        height: 100%;
+    }
 
+    .attributes {
+        display: flex;
+        justify-self: flex-start;
+    }
+
+    .attribute {
+        padding-right: 3em;
+        display: flex;
+        justify-self: flex-start;
+        align-items: baseline;
+    }
+
+    .attr-category {
+        padding-right: .3em;
+        font-weight: 500;
+    }
+
+    .attr-items {
+    }
+
+    .work-page-heading {
+        font-size: 2em;
+    }
+
+    .work-page-heading > * {
+        margin: 0;
+    }
+
+    .work-page {
+        padding-left: 1em;
+    }
 }
 
 .card-text {
     font-size: 1.4em;
-    font-weight: 900;
+    font-weight: 700;
     text-align: left;
 }
 
