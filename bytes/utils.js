@@ -58,6 +58,8 @@ function createElement(content, classString, tag='div') {
     classString && el.setAttribute('class', classString)
     if (tag == 'img') {
         el.setAttribute('src', `../assets/${content}`)
+    } else if (tag == 'video'){
+        el.setAttribute('src', `../assets/${content}`)
     } else {
         el.innerHTML += content
     }

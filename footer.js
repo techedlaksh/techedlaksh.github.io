@@ -1,4 +1,4 @@
-let footerText = 'Handcrafted with good old HTML, CSS, Javascript. | Last Updated: March 2025'
+let footerText = 'Handcrafted with good old HTML, CSS, Javascript. | Last Updated: July 2025'
 
 let footerContent = `
 ${footerText}
