@@ -32,6 +32,10 @@ let moduleContent = createElement('', 'module-page-content')
 let mediaGrid = createElement('', 'media-grid')
 mediaItems = [
     { 
+        thumbnail: 'joyfulcard_product.mp4' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
         thumbnail: 'joyfulcard_scrolling.mp4' ,
         size: {w: '100%', h: 'auto',}
     },
