@@ -55,14 +55,22 @@ function createClassString(classes=[]) {
 
 function createElement(content, classString, tag='div') {
     let el =  document.createElement(tag)
-    classString && el.setAttribute('class', classString)
     if (tag == 'img') {
         el.setAttribute('src', `../assets/${content}`)
     } else if (tag == 'video'){
         el.setAttribute('src', `../assets/${content}`)
+        el.setAttribute('type', 'video/mp4')
+        // el.setAttribute('controls', '')
+        el.setAttribute('autoplay', '')
+        el.setAttribute('muted', '')
+        el.setAttribute('loop', '')
+        el.setAttribute('playsinline', '')
+        el.setAttribute('preload', true)
+        el.play()
     } else {
         el.innerHTML += content
     }
+    classString && el.setAttribute('class', classString)
     return el
 }
 

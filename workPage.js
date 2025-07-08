@@ -5,7 +5,7 @@ let works = [
     {
         title: `JoyfulCards`,
         subtext: `Subtext for the work`,
-        thumbnail: `joyfulcards1.gif`,
+        thumbnail: `joyfulcards1.mp4`,
         size: 'ar-width',
         subpage: 'joyfulcards',
     },
@@ -89,13 +89,21 @@ works.forEach((work) => {
     const cardMedia = createElement('', 'card-media')
     const cardText = createElement( '', 'card-text')
 
-    const image = createElement(`works/${work.thumbnail}`, createClassString(['card-img']), 'img')
+    const previewPath = `works/${work.thumbnail}`
+    let preview
+    if (work.thumbnail.split('.').at(-1) == 'mp4') {
+        preview = createElement(previewPath, 'card-img', 'video')
+    } else {
+        preview = createElement(previewPath, 'card-img', 'img')
+    }
+
+    // const image = createElement(previewPath, createClassString(['card-img']), 'img')
     const title = createElement('', 'card-text-title')
     title.innerHTML = `${work.title},`
     const subtext = createElement('', 'card-text-subtext')
     subtext.innerHTML = work.subtext
 
-    cardMedia.appendChild(image)
+    cardMedia.appendChild(preview)
     cardText.appendChild(title)
     cardText.appendChild(subtext)
     card.appendChild(cardMedia)

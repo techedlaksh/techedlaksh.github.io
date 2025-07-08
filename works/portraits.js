@@ -33,7 +33,7 @@ let moduleContent = createElement('', 'module-page-content')
 let mediaGrid = createElement('', 'media-grid')
 mediaItems = [
     { 
-        thumbnail: 'portraits_generate.gif' ,
+        thumbnail: 'portraits_product.mp4' ,
         size: {w: '100%', h: 'auto',}
     },
     { 
@@ -49,7 +49,7 @@ mediaItems = [
         size: {w: '100%', h: 'auto',}
     },
     { 
-        thumbnail: 'portraits_homepage.gif' ,
+        thumbnail: 'portraits_homepage.mp4' ,
         size: {w: '100%', h: 'auto',}
     },
     { 
@@ -74,7 +74,13 @@ mediaItems.forEach((item) => {
     // moduleMedia.style.paddingLeft = '1em'
     moduleMedia.style.paddingRight = '1em'
 
-    const media = createElement(`works/portraits/${item.thumbnail}`, '', 'img')
+    const itemPath = `works/portraits/${item.thumbnail}`
+    let media
+    if (item.thumbnail.split('.').at(-1) == 'mp4') {
+        media = createElement(itemPath, '', 'video')
+    } else {
+        media = createElement(itemPath, '', 'img')
+    }
     media.style.width = '100%'
     media.style.height = 'auto'
 

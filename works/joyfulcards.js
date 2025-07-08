@@ -32,7 +32,7 @@ let moduleContent = createElement('', 'module-page-content')
 let mediaGrid = createElement('', 'media-grid')
 mediaItems = [
     { 
-        thumbnail: 'joyfulcard_scrolling.gif' ,
+        thumbnail: 'joyfulcard_scrolling.mp4' ,
         size: {w: '100%', h: 'auto',}
     },
     { 
@@ -69,7 +69,13 @@ mediaItems.forEach((item) => {
     // moduleMedia.style.paddingLeft = '1em'
     moduleMedia.style.paddingRight = '1em'
 
-    const media = createElement(`works/joyfulcards/${item.thumbnail}`, '', 'img')
+    const itemPath = `works/joyfulcards/${item.thumbnail}`
+    let media
+    if (item.thumbnail.split('.').at(-1) == 'mp4') {
+        media = createElement(itemPath, '', 'video')
+    } else {
+        media = createElement(itemPath, '', 'img')
+    }
     media.style.width = '100%'
     media.style.height = 'auto'
 
