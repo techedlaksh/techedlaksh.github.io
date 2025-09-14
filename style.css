@@ -59,6 +59,20 @@
   src: url('assets/HubotSansVariable.ttf');
 }
 
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('assets/ManropeVariable.ttf');
+}
+
+@font-face {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('assets/SatoshiVariable.ttf');
+}
+
 * > * {
     box-sizing: border-box;
 }
@@ -74,7 +88,9 @@ body {
     /* font-weight: bold; */
     /* font-family: "iAWriter", "Helvetica"; */
     /* font-family: "HubotSans", "MonaSans", "Figtree", "Inter", "Helvetica"; */
-    font-family: "HubotSans", "Helvetica";
+    /* font-family: "HubotSans", "Helvetica"; */
+    font-family: "Manrope", "Helvetica";
+    /* font-family: "Satoshi", "Helvetica"; */
 }
 
 a {
