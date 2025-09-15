@@ -66,37 +66,70 @@ mediaItems = [
         ],
         size: {w: '33%', h: 'auto',}
     },
-    // { 
-    //     thumbnail: 'themes_pattern_explorer.mp4' ,
-    //     size: {w: '30%', h: 'auto',}
-    // },
+    { 
+        thumbnail: [
+            'themes_grid5.png',
+            'themes_grid6.png',
+            'themes_grid7.png',
+            'themes_grid8.png',
+        ],
+        size: {w: '50%', h: 'auto',}
+    },
     { 
         thumbnail: 'themes_grid_maker.mp4' ,
-        size: {w: '40%', h: 'auto',}
-    },
-    { 
-        thumbnail: 'themes_grid_explore.mov' ,
         size: {w: '50%', h: 'auto',}
-    },
-    { 
-        thumbnail: 'themes_grid_visual.png' ,
-        size: {w: '50%', h: 'auto',}
-    },
-    { 
-        thumbnail: 'themes_showcase.mp4' ,
-        size: {w: '39%', h: 'auto',}
     },
     { 
         thumbnail: 'book_specialthanks.png' ,
-        size: {w: '100%', h: 'auto',}
+        size: {w: '42.2%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'themes_showcase.mp4' ,
+        size: {w: '57.8%', h: 'auto',}
     },
     { 
         thumbnail: 'book_hardcover.png' ,
-        size: {w: '42%', h: 'auto',}
+        size: {w: '42.2%', h: 'auto',}
     },
     { 
         thumbnail: 'book_entry.png' ,
-        size: {w: '58%', h: 'auto',}
+        size: {w: '57.8%', h: 'auto',}
+    },
+    {
+        thumbnail: 'vera_quote.png' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    {
+        thumbnail: 'themes_pattern_explorer.mp4' ,
+        size: {w: '50%', h: 'auto',}
+    },
+    {
+        thumbnail: 'themes_grid_explorer.mov' ,
+        size: {w: '50%', h: 'auto',}
+    },
+    {
+        thumbnail: 'design_letter_step0.png' ,
+        size: {w: '50%', h: 'auto',}
+    },
+    {
+        thumbnail: 'design_letter_step1.png' ,
+        size: {w: '50%', h: 'auto',}
+    },
+    {
+        thumbnail: 'design_letter_step2.png' ,
+        size: {w: '50%', h: 'auto',}
+    },
+    {
+        thumbnail: 'design_letter_step3.png' ,
+        size: {w: '50%', h: 'auto',}
+    },
+    {
+        thumbnail: 'themes_early_exploration.png' ,
+        size: {w: '50%', h: 'auto',}
+    },
+    {
+        thumbnail: 'themes_early_exploration_sotheby.png' ,
+        size: {w: '50%', h: 'auto',}
     },
 ]
 
