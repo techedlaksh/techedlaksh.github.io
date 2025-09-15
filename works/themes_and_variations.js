@@ -32,6 +32,10 @@ let moduleContent = createElement('', 'module-page-content')
 let mediaGrid = createElement('', 'media-grid')
 mediaItems = [
     { 
+        thumbnail: 'artblocks_hero.png' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
         thumbnail: 'themes_N_letter.mp4' ,
         size: {w: '33%', h: 'auto',}
     },
@@ -44,67 +48,90 @@ mediaItems = [
         size: {w: '33%', h: 'auto',}
     },
     { 
-        thumbnail: 'themes_pattern_explorer.mp4' ,
-        size: {w: '61%', h: 'auto',}
+        thumbnail: 'themes_about.png' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'themes_pattern_builder.mp4' ,
+        size: {w: '67%', h: 'auto',}
+    },
+    { 
+        thumbnail: [
+            'themes_pattern1.png', 
+            'themes_pattern2.png', 
+            'themes_pattern3.png',
+            'themes_pattern4.png',
+            'themes_pattern5.png',
+            'themes_pattern6.png',
+        ],
+        size: {w: '33%', h: 'auto',}
+    },
+    // { 
+    //     thumbnail: 'themes_pattern_explorer.mp4' ,
+    //     size: {w: '30%', h: 'auto',}
+    // },
+    { 
+        thumbnail: 'themes_grid_maker.mp4' ,
+        size: {w: '40%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'themes_grid_explore.mov' ,
+        size: {w: '50%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'themes_grid_visual.png' ,
+        size: {w: '50%', h: 'auto',}
     },
     { 
         thumbnail: 'themes_showcase.mp4' ,
         size: {w: '39%', h: 'auto',}
     },
     { 
-        thumbnail: 'themes_about.png' ,
+        thumbnail: 'book_specialthanks.png' ,
         size: {w: '100%', h: 'auto',}
     },
     { 
-        thumbnail: 'themes_product.mp4' ,
-        size: {w: '100%', h: 'auto',}
+        thumbnail: 'book_hardcover.png' ,
+        size: {w: '42%', h: 'auto',}
     },
     { 
-        thumbnail: 'joyfulcard_bg1.png' ,
-        size: {w: '50%', h: 'auto',}
-    },
-    { 
-        thumbnail: 'joyfulcard_bg2.png' ,
-        size: {w: '50%', h: 'auto',}
-    },
-    { 
-        thumbnail: 'joyfulcard_headline.png' ,
-        size: {w: '70%', h: 'auto',}
-    },
-    { 
-        thumbnail: 'joyfulcard_bg3.png' ,
-        size: {w: '30%', h: 'auto',}
-    },
-    { 
-        thumbnail: 'joyfulcard_bg4.png' ,
-        size: {w: '30%', h: 'auto',}
-    },
-    { 
-        thumbnail: 'joyfulcard_steps.png' ,
-        size: {w: '70%', h: 'auto',}
+        thumbnail: 'book_entry.png' ,
+        size: {w: '58%', h: 'auto',}
     },
 ]
 
-mediaItems.forEach((item) => {
-    const moduleMedia = createElement('', createClassString(['module-media']))
-    // const moduleCardMedia = createElement('', 'module-media-media')
-    moduleMedia.style.width = item.size.w
-    moduleMedia.style.height = item.size.h
-    // moduleMedia.style.paddingLeft = '1em'
-    moduleMedia.style.paddingRight = '1em'
-
-    const itemPath = `works/themes_and_variations/${item.thumbnail}`
+function addMedia(fname) {
+    const itemPath = `works/themes_and_variations/${fname}`
     let media
-    if (item.thumbnail.split('.').at(-1) == 'mp4') {
+    if (['mp4', 'mov'].includes(fname.split('.').at(-1))) {
         media = createElement(itemPath, '', 'video')
     } else {
         media = createElement(itemPath, '', 'img')
     }
-    media.style.width = '100%'
-    media.style.height = 'auto'
+    return media
+}
 
-    moduleMedia.appendChild(media)
-    // moduleMedia.appendChild(moduleCardMedia)
+mediaItems.forEach((item) => {
+    const moduleMedia = createElement('', createClassString(['module-media']))
+    moduleMedia.style.width = item.size.w
+    moduleMedia.style.height = item.size.h
+    moduleMedia.style.paddingRight = '1em'
+
+    if (Array.isArray(item.thumbnail)) {
+        item.thumbnail.forEach((subItem) => {
+            const itemName = subItem
+            const media = addMedia(itemName)
+            media.style.width = '50%'
+            media.style.height = 'auto'
+            moduleMedia.appendChild(media)
+        })
+    } else {
+        const itemName = item.thumbnail
+        const media = addMedia(itemName)
+        media.style.width = '100%'
+        media.style.height = 'auto'
+        moduleMedia.appendChild(media)
+    }
 
 
     mediaGrid.appendChild(moduleMedia)
