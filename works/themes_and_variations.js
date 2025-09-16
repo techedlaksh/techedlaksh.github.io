@@ -25,7 +25,7 @@ attributesContainer.appendChild(
     addAttribute('Role', 'UI/UX, Front End Development, Internal Tools, Generative Algorithms')
 )
 attributesContainer.appendChild(
-    addAttribute('Tools', 'HTML, JS, CSS')
+    addAttribute('Tools', 'HTML, JS, CSS, Python')
 )
 
 let moduleContent = createElement('', 'module-page-content')
