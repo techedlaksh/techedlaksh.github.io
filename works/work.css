@@ -113,6 +113,8 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
+        padding-right: 1em;
+        padding-bottom: 1em;
     }
 
 }

@@ -37,22 +37,41 @@ mediaItems = [
     },
     { 
         thumbnail: 'tam_showcase.mp4' ,
-        size: {w: '28%', h: 'auto',}
+        size: {w: '30%', h: 'auto',}
     },
     { 
         thumbnail: [
-            'tam_mint7.png',
-            'tam_mint1.png',
-            'tam_mint2.png',
-            'tam_mint4.png',
-            'tam_mint8.png',
             'tam_paint1.png',
             'tam_paint2.png',
             'tam_paint3.png',
             'tam_paint6.png',
             'tam_paint8.png',
+            'tam_mint7.png',
+            'tam_mint1.png',
+            'tam_mint2.png',
+            'tam_mint4.png',
+            'tam_mint8.png',
         ] ,
         size: {w: '70%', h: 'auto', divide: '20%'}
+    },
+    { 
+        thumbnail: 'tam_editor.mp4',
+        size: {w: '65%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'tam_mask_noise.mp4',
+        size: {w: '47%', h: 'auto',}
+    },
+    { 
+        thumbnail: [
+            'spray_noise1.png',
+            'spray_noise2.png',
+            'spray_noise3.png',
+            'spray_noise4.png',
+            'spray_noise5.png',
+            'spray_noise6.png',
+        ] ,
+        size: {w: '53%', h: 'auto', divide: '33%'}
     },
     { 
         thumbnail: [
@@ -66,23 +85,46 @@ mediaItems = [
         size: {w: '25%', h: 'auto',}
     },
     { 
-        thumbnail: 'tam_editor.mp4',
-        size: {w: '65%', h: 'auto',}
-    },
-    { 
-        thumbnail: 'tam_mask_noise.mp4',
-        size: {w: '45%', h: 'auto',}
+        thumbnail: [
+            'tam_extra_paint1.png',
+            'tam_extra_paint2.png',
+        ],
+        size: {w: '38%', h: 'auto', divide: '100%'}
     },
     { 
         thumbnail: [
-            'spray_noise1.png',
-            'spray_noise2.png',
-            'spray_noise3.png',
-            'spray_noise4.png',
-            'spray_noise5.png',
-            'spray_noise6.png',
-        ] ,
-        size: {w: '55%', h: 'auto', divide: '33%'}
+            'tam_extra_paint5.png',
+            'tam_extra_paint3.png',
+        ],
+        size: {w: '35%', h: 'auto', divide: '100%'}
+    },
+    { 
+        thumbnail: 'tam_extra_paint6.png' ,
+        size: {w: '27%', h: 'auto'}
+    },
+    { 
+        thumbnail: 'tam_extra_digital2.png',
+        size: {w: '100%', h: 'auto', divide: '100%'}
+    },
+    { 
+        thumbnail: 'tam_extra_digital4.png',
+        size: {w: '100%', h: 'auto', divide: '100%'}
+    },
+    { 
+        thumbnail: 'tam_extra_digital5.png',
+        size: {w: '100%', h: 'auto', divide: '100%'}
+    },
+    { 
+        thumbnail: 'tam_extra_digital6.png',
+        size: {w: '100%', h: 'auto', divide: '100%'}
+    },
+    { 
+        thumbnail: 'tam_extra_digital7.png',
+        size: {w: '100%', h: 'auto', divide: '100%'}
+    },
+    { 
+        thumbnail: 'tam_extra_digital8.png',
+        size: {w: '100%', h: 'auto', divide: '100%'}
     },
 ]
 
@@ -101,7 +143,6 @@ mediaItems.forEach((item) => {
     const moduleMedia = createElement('', createClassString(['module-media']))
     moduleMedia.style.width = item.size.w
     moduleMedia.style.height = item.size.h
-    moduleMedia.style.paddingRight = '1em'
 
     if (Array.isArray(item.thumbnail)) {
         item.thumbnail.forEach((subItem) => {
@@ -109,6 +150,8 @@ mediaItems.forEach((item) => {
             const media = addMedia(itemName)
             media.style.width = item.size.divide
             media.style.height = 'auto'
+            media.style.paddingBottom = '.5em'
+            media.style.paddingRight = '.5em'
             moduleMedia.appendChild(media)
         })
     } else {
