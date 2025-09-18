@@ -12,7 +12,7 @@ function addAttribute(category='Category', items='Item 1, Item 2') {
 
 let heading = createElement('','module-page-heading')
 let title = createElement('Bertelsmann Investment','work-page-title','h1')
-let subtext = createElement('Compositing shapes with new perspective','work-page-subtext','h1')
+let subtext = createElement('ThreeJS Artwork and Framer Website','work-page-subtext','h1')
 
 let attributesContainer = createElement('','attributes')
 attributesContainer.appendChild(
@@ -34,6 +34,26 @@ mediaItems = [
     { 
         thumbnail: 'bi_summary.png' ,
         size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'bi_website_overview.png' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'bi_audience.png' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'bi_artwork_overview.png' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: [
+            'bi_artwork1_breakdown.png',
+            'bi_artwork2_breakdown.png',
+            'bi_artwork3_breakdown.png',
+        ] ,
+        size: {w: '100%', h: 'auto', divide: '33%'}
     },
     { 
         thumbnail: 'bi_home_hero.png' ,
@@ -82,6 +102,20 @@ mediaItems = [
     { 
         thumbnail: 'bi_team_ui_framer.png' ,
         size: {w: '50%', h: 'auto',}
+    },
+    { 
+        thumbnail: [
+            'bi_ref_man2.png',
+            'bi_ref_man3.png',
+            'bi_ref_man4.png',
+            'bi_ref_man5.png',
+            'bi_ref_man6.png',
+            'bi_ref_man7.png',
+            'bi_ref_man10.png',
+            'bi_ref_man12.png',
+            'bi_ref_man13.png',
+        ],
+        size: {w: '100%', h: 'auto', divide:'33%'}
     },
 ]
 
