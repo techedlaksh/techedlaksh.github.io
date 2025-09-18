@@ -96,6 +96,14 @@ mediaItems = [
         size: {w: '50%', h: 'auto',}
     },
     { 
+        thumbnail: 'bi_news_cms_section.png' ,
+        size: {w: '50%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'bi_news_cms.png' ,
+        size: {w: '50%', h: 'auto',}
+    },
+    { 
         thumbnail: 'bi_team_ui_section.mp4' ,
         size: {w: '50%', h: 'auto',}
     },
