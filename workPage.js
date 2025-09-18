@@ -35,7 +35,7 @@ let works = [
         subtext: `Subtext for the work`,
         thumbnail: `bertelsmann_investment_artwork3.gif`,
         size: 'ar-square',
-        subpage: 'bertelsmann_investment_artwork',
+        subpage: 'bertelsmann_investment',
     },
     {
         title: `Kanbas`,
