@@ -25,7 +25,7 @@ attributesContainer.appendChild(
     addAttribute('Role', 'Framer, Front End Development ')
 )
 attributesContainer.appendChild(
-    addAttribute('Tools', 'ReactJS, HTML, JS, CSS, Python, Excel Automation')
+    addAttribute('Tools', 'ReactJS, NodeJS, Excel Automation')
 )
 
 let moduleContent = createElement('', 'module-page-content')
@@ -36,7 +36,27 @@ mediaItems = [
         size: {w: '100%', h: 'auto',}
     },
     { 
-        thumbnail: 'kanbas_film_page.png' ,
+        thumbnail: 'kanbas_hometicker_cms.png' ,
+        size: {w: '50%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'kanbas_projects_cms.mp4' ,
+        size: {w: '50%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'kanbas_artists_hover.mp4' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'kanbas_artists_cms.mp4' ,
+        size: {w: '50%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'kanbas_projects_artist_cms.mp4' ,
+        size: {w: '50%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'kanbas_projects_page.mp4' ,
         size: {w: '100%', h: 'auto',}
     },
     { 
@@ -44,12 +64,42 @@ mediaItems = [
         size: {w: '100%', h: 'auto',}
     },
     { 
-        thumbnail: 'kanbas_core_hover.mp4' ,
+        thumbnail: 'kanbas_collection_page.mp4' ,
         size: {w: '100%', h: 'auto',}
     },
     { 
-        thumbnail: 'kanbas_artists_hover.mp4' ,
+        thumbnail: 'kanbas_collection_cms.mp4' ,
+        size: {w: '50%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'kanbas_projects_collection_cms.mp4' ,
+        size: {w: '50%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'kanbas_film_page.png' ,
         size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: [
+            'kanbas_excel1.png',
+            'kanbas_excel2.png',
+            'kanbas_excel3.png',
+            'kanbas_excel4.png',
+        ] ,
+        size: {w: '100%', h: 'auto', divide: '50%'}
+    },
+    { 
+        thumbnail: [
+            'kanbas_excel5.png',
+            'kanbas_excel8.png',
+            'kanbas_excel9.png',
+            'kanbas_excel10.png',
+        ] ,
+        size: {w: '100%', h: 'auto', divide: '50%'}
+    },
+    { 
+        thumbnail: 'kanbas_node_automation.png',
+        size: {w: '100%', h: 'auto', divide: '50%'}
     },
 ]
 
