@@ -45,13 +45,6 @@ let works = [
         subpage: 'kanbas',
     },
     {
-        title: `In Conversation`,
-        subtext: `Subtext for the work`,
-        thumbnail: `in_conversation1.png`,
-        size: 'ar-width',
-        subpage: 'in_conversation',
-    },
-    {
         title: `Maegard`,
         subtext: `Subtext for the work`,
         thumbnail: `maegard1.png`,
@@ -78,6 +71,13 @@ let works = [
         thumbnail: `love1.gif`,
         size: 'ar-square',
         subpage: 'love',
+    },
+    {
+        title: `Small Experiments`,
+        subtext: `Subtext for the work`,
+        thumbnail: `experiments.png`,
+        size: 'ar-width',
+        subpage: 'experiments',
     },
 ]
 
