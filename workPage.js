@@ -44,20 +44,20 @@ let works = [
         size: 'ar-square',
         subpage: 'kanbas',
     },
-    {
-        title: `Maegard`,
-        subtext: `Subtext for the work`,
-        thumbnail: `maegard1.png`,
-        size: 'ar-square',
-        subpage: 'maegard',
-    },
-    {
-        title: `Martin Grasser Portfolio`,
-        subtext: `Subtext for the work`,
-        thumbnail: `martin_grasser_portfolio1.gif`,
-        size: 'ar-width',
-        subpage: 'martin_grasser_portfolio',
-    },
+    // {
+    //     title: `Maegard`,
+    //     subtext: `Subtext for the work`,
+    //     thumbnail: `maegard1.png`,
+    //     size: 'ar-square',
+    //     subpage: 'maegard',
+    // },
+    // {
+    //     title: `Martin Grasser Portfolio`,
+    //     subtext: `Subtext for the work`,
+    //     thumbnail: `martin_grasser_portfolio1.gif`,
+    //     size: 'ar-width',
+    //     subpage: 'martin_grasser_portfolio',
+    // },
     {
         title: `Squares`,
         subtext: `Subtext for the work`,
@@ -73,7 +73,7 @@ let works = [
         subpage: 'love',
     },
     {
-        title: `Small Experiments`,
+        title: `Experiments`,
         subtext: `Subtext for the work`,
         thumbnail: `experiments.png`,
         size: 'ar-width',
