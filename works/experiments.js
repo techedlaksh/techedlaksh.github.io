@@ -12,7 +12,7 @@ function addAttribute(category='Category', items='Item 1, Item 2') {
 
 let heading = createElement('','module-page-heading')
 let title = createElement('Experiments','work-page-title','h1')
-let subtext = createElement('Fun, Small, Killing Time','work-page-subtext','h1')
+let subtext = createElement('Fun, Small, Brainstorming ideas','work-page-subtext','h1')
 
 let attributesContainer = createElement('','attributes')
 attributesContainer.appendChild(
@@ -22,10 +22,10 @@ attributesContainer.appendChild(
     addAttribute('Year', '2008 - 2025')
 )
 attributesContainer.appendChild(
-    addAttribute('Role', '')
+    addAttribute('Role', 'Full Stack Developer')
 )
 attributesContainer.appendChild(
-    addAttribute('Tools', '')
+    addAttribute('Tools', 'HTML, CSS, JS, Python, NodeJS')
 )
 
 let moduleContent = createElement('', 'module-page-content')
@@ -36,19 +36,20 @@ mediaItems = [
         size: {w: '100%', h: 'auto',}
     },
     { 
-        thumbnail: 'in_conversation2.png' ,
+        thumbnail: 'in_conversation2.mp4' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'in_conversation5.png' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'in_conversation4.png' ,
         size: {w: '100%', h: 'auto',}
     },
     { 
         thumbnail: 'maegard1.png' ,
         size: {w: '100%', h: 'auto',}
-    },
-    { 
-        thumbnail: [
-            '',
-            '',
-        ] ,
-        size: {w: '100%', h: 'auto', divide: '50%'}
     },
 ]
 
