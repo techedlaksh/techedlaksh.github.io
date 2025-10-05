@@ -1,4 +1,4 @@
-console.log('experiments')
+console.log('prototypes')
 
 let mainElement = document.getElementById('main')
 let modulePage = createElement('','module-page')
@@ -11,7 +11,7 @@ function addAttribute(category='Category', items='Item 1, Item 2') {
 }
 
 let heading = createElement('','module-page-heading')
-let title = createElement('Experiments','work-page-title','h1')
+let title = createElement('Prototypes','work-page-title','h1')
 let subtext = createElement('Fun, Small, Brainstorming ideas','work-page-subtext','h1')
 
 let attributesContainer = createElement('','attributes')
@@ -54,7 +54,7 @@ mediaItems = [
 ]
 
 function addMedia(fname) {
-    const assetsPath = `works/experiments`
+    const assetsPath = `works/prototypes`
     const itemPath = `${assetsPath}/${fname}`
     let media
     if (['mp4', 'mov'].includes(fname.split('.').at(-1))) {

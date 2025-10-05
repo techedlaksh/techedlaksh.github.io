@@ -35,6 +35,22 @@ mediaItems = [
         thumbnail: 'love_showcase.mp4' ,
         size: {w: '50%', h: 'auto',}
     },
+    { 
+        thumbnail: 'love_intro2.png' ,
+        size: {w: '50%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'love_tournament.jpg' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'love_point1.png' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'love_point2.png' ,
+        size: {w: '100%', h: 'auto',}
+    },
 ]
 
 function addMedia(fname) {

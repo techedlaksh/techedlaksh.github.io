@@ -73,11 +73,11 @@ let works = [
         subpage: 'love',
     },
     {
-        title: `Experiments`,
+        title: `Prototypes`,
         subtext: `Fun, Small, Brainstorming ideas`,
-        thumbnail: `experiments.png`,
+        thumbnail: `prototypes.png`,
         size: 'ar-width',
-        subpage: 'experiments',
+        subpage: 'prototypes',
     },
 ]
 
