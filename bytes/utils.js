@@ -65,6 +65,7 @@ function createElement(content, classString, tag='div') {
         el.setAttribute('muted', '')
         el.setAttribute('loop', '')
         el.setAttribute('playsinline', '')
+        // el.setAttribute('onloadeddata', 'this.play();')
         el.setAttribute('preload', true)
         el.play()
     } else {

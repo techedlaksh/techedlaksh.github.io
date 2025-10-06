@@ -40,6 +40,14 @@ mediaItems = [
         size: {w: '50%', h: 'auto',}
     },
     { 
+        thumbnail: [
+            'love_marketing1.mp4',
+            'love_marketing2.mp4',
+            'love_marketing3.mp4',
+        ],
+        size: {w: '100%', h: 'auto', divide: '33%'}
+    },
+    { 
         thumbnail: 'love_tournament.jpg' ,
         size: {w: '100%', h: 'auto',}
     },
@@ -50,6 +58,18 @@ mediaItems = [
     { 
         thumbnail: 'love_point2.png' ,
         size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'love_internal_tool1.mp4' ,
+        size: {w: '70%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'love_shadow_helper.mp4' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'love_shadow_set.png' ,
+        size: {w: '97.5%', h: 'auto',}
     },
 ]
 
