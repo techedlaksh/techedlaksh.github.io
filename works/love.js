@@ -60,8 +60,35 @@ mediaItems = [
         size: {w: '100%', h: 'auto',}
     },
     { 
+        thumbnail: 'love_collection_step1.png' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'love_collection_step2.png' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'love_collection_step3.png' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'love_collection_step4.png' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'love_collection_step5.png' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: [
+            'love_collection_step6.png',
+            'love_collection_step7.png',
+        ],
+        size: {w: '100%', h: 'auto', divide: '50%'}
+    },
+    { 
         thumbnail: 'love_internal_tool1.mp4' ,
-        size: {w: '70%', h: 'auto',}
+        size: {w: '80%', h: 'auto',}
     },
     { 
         thumbnail: 'love_shadow_helper.mp4' ,
