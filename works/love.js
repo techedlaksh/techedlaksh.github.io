@@ -87,8 +87,19 @@ mediaItems = [
         size: {w: '100%', h: 'auto', divide: '50%'}
     },
     { 
+        thumbnail: [
+            'love_court_dims_real.png',
+            'love_court_dims_sim.svg',
+        ],
+        size: {w: '100%', h: 'auto', divide: '50%'}
+    },
+    { 
         thumbnail: 'love_internal_tool1.mp4' ,
         size: {w: '80%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'love_palettes_wip.png' ,
+        size: {w: '100%', h: 'auto',}
     },
     { 
         thumbnail: 'love_shadow_helper.mp4' ,
@@ -106,6 +117,8 @@ function addMedia(fname) {
     let media
     if (['mp4', 'mov'].includes(fname.split('.').at(-1))) {
         media = createElement(itemPath, '', 'video')
+    } else if (['svg'].includes(fname.split('.').at(-1))) {
+        media = createElement(itemPath, '', 'svg')
     } else {
         media = createElement(itemPath, '', 'img')
     }
