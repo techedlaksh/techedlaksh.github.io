@@ -54,12 +54,10 @@ function createClassString(classes=[]) {
 }
 
 function createElement(content, classString, tag='div') {
-    let el
+    let el = document.createElement(tag)
     if (tag == 'img') {
-        el = document.createElement('img')
         el.setAttribute('src', `../assets/${content}`)
     } else if (tag == 'video'){
-        el = document.createElement('video')
         el.setAttribute('src', `../assets/${content}`)
         el.setAttribute('type', 'video/mp4')
         // el.setAttribute('controls', '')
@@ -74,7 +72,6 @@ function createElement(content, classString, tag='div') {
         el = document.createElement('object')
         el.setAttribute('data', `../assets/${content}`)
     } else {
-        el = document.createElement('div')
         el.innerHTML += content
     }
     classString && el.setAttribute('class', classString)
