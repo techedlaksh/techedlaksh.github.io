@@ -94,8 +94,16 @@ mediaItems = [
         size: {w: '100%', h: 'auto', divide: '50%'}
     },
     { 
-        thumbnail: 'love_internal_tool1.mp4' ,
-        size: {w: '80%', h: 'auto',}
+        thumbnail: 'love_internal_tool.mp4' ,
+        size: {w: '65%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'love_artblocks_grid.png' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'love_palettes_showcase.mp4' ,
+        size: {w: '65%', h: 'auto',}
     },
     { 
         thumbnail: 'love_palettes_wip.png' ,
@@ -108,6 +116,38 @@ mediaItems = [
     { 
         thumbnail: 'love_shadow_set.png' ,
         size: {w: '97.5%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'love_left_right_text.png',
+        size: {w: '80%', h: 'auto',}
+    },
+    { 
+        thumbnail: [
+            'love_left_shadow.png',
+            'love_right_shadow.png',
+        ],
+        size: {w: '75%', h: 'auto', divide: '50%'}
+    },
+    { 
+        thumbnail: [
+            'love_camera1.png',
+            'love_camera2.png',
+            'love_camera3.png',
+        ],
+        size: {w: '100%', h: 'auto', divide: '33%'}
+    },
+    { 
+        thumbnail: [
+            'love_exploration1.png',
+            'love_exploration6.png',
+            'love_exploration7.png',
+            'love_exploration8.png',
+            'love_exploration4.png',
+            'love_exploration5.png',
+            'love_exploration2.png',
+            'love_exploration3.png',
+        ],
+        size: {w: '100%', h: 'auto', divide: '25%'}
     },
 ]
 
