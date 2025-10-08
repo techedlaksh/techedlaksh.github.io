@@ -19,7 +19,7 @@ attributesContainer.appendChild(
     addAttribute('Client', 'Martin Grasser')
 )
 attributesContainer.appendChild(
-    addAttribute('Year', '2021')
+    addAttribute('Year', '2021-2022')
 )
 attributesContainer.appendChild(
     addAttribute('Role', 'Generative Algorithms, Internal Tools')
@@ -31,6 +31,14 @@ attributesContainer.appendChild(
 let moduleContent = createElement('', 'module-page-content')
 let mediaGrid = createElement('', 'media-grid')
 mediaItems = [
+    { 
+        thumbnail: 'squares_ab_hero.png' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'squares_ab_grid.png' ,
+        size: {w: '100%', h: 'auto',}
+    },
     { 
         thumbnail: 'squares_showcase.mp4' ,
         size: {w: '100%', h: 'auto',}
@@ -69,6 +77,26 @@ mediaItems = [
             'squares_full5.png',
         ],
         size: {w: '100%', h: 'auto', divide: '50%'}
+    },
+    { 
+        thumbnail: 'squares_slides2-1.png' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'squares_slides2-5.png' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'squares_slides2-2.png' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'squares_slides2-3.png' ,
+        size: {w: '100%', h: 'auto',}
+    },
+    { 
+        thumbnail: 'squares_slides2-4.png' ,
+        size: {w: '100%', h: 'auto',}
     },
 ]
 
