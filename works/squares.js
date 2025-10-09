@@ -79,24 +79,25 @@ mediaItems = [
         size: {w: '100%', h: 'auto', divide: '50%'}
     },
     { 
-        thumbnail: 'squares_slides2-1.png' ,
-        size: {w: '100%', h: 'auto',}
+        thumbnail: 'squares_exp3.png' ,
+        size: {w: '70%', h: 'auto',}
     },
     { 
-        thumbnail: 'squares_slides2-5.png' ,
-        size: {w: '100%', h: 'auto',}
+        thumbnail: [
+            'squares_exp1.png',
+            'squares_exp2.png',
+        ],
+        size: {w: '100%', h: 'auto', divide: '50%'}
     },
     { 
-        thumbnail: 'squares_slides2-2.png' ,
-        size: {w: '100%', h: 'auto',}
-    },
-    { 
-        thumbnail: 'squares_slides2-3.png' ,
-        size: {w: '100%', h: 'auto',}
-    },
-    { 
-        thumbnail: 'squares_slides2-4.png' ,
-        size: {w: '100%', h: 'auto',}
+        thumbnail: [
+            'squares_slides2-1.png',
+            'squares_slides2-5.png',
+            'squares_slides2-2.png',
+            'squares_slides2-3.png',
+            'squares_slides2-4.png',
+        ],
+        size: {w: '100%', h: 'auto', divide:'100%'}
     },
 ]
 
