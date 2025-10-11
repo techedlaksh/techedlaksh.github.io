@@ -35,7 +35,7 @@ function stylise(text='', style='') {
 
 function point(style='') {
     let config = {
-        'brackets': '&lt;&gt;'
+        'brackets': '&lt;&gt;',
     }
 
     return config[style] || ''
@@ -54,9 +54,27 @@ function createClassString(classes=[]) {
 }
 
 function createElement(content, classString, tag='div') {
-    let el =  document.createElement(tag)
-    classString && el.setAttribute("class", classString)
-    el.innerHTML += content
+    let el = document.createElement(tag)
+    if (tag == 'img') {
+        el.setAttribute('src', `../assets/${content}`)
+    } else if (tag == 'video'){
+        el.setAttribute('src', `../assets/${content}`)
+        el.setAttribute('type', 'video/mp4')
+        // el.setAttribute('controls', '')
+        el.setAttribute('autoplay', '')
+        el.setAttribute('muted', '')
+        el.setAttribute('loop', '')
+        el.setAttribute('playsinline', '')
+        // el.setAttribute('onloadeddata', 'this.play();')
+        el.setAttribute('preload', true)
+        el.play()
+    } else if (tag == 'svg'){
+        el = document.createElement('object')
+        el.setAttribute('data', `../assets/${content}`)
+    } else {
+        el.innerHTML += content
+    }
+    classString && el.setAttribute('class', classString)
     return el
 }
 
@@ -64,9 +82,11 @@ function addBreak(n=0) {
     return '<br>'.repeat(n)
 }
 
-function addImage(name) {
+function addImage(name, className='') {
     let imgElem = `
-        <div class='image'><br><img src='../assets/${name}' alt='${name}'/></div>
+        <div class='image'>
+        <br><img src='../assets/${name}' alt='${name}' class='${className}'/>
+        </div>
     `
     return imgElem
 }

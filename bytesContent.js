@@ -34,6 +34,11 @@ byteList.push(makeByteElement(
     'what_is_a_browser'
 ))
 
+byteList.push(makeByteElement(
+    'Vibe Coding - is it any good?', 
+    'vibe_coding_a_game'
+))
+
 //byteList.push(addByte(
 //'Launch of my joyfulcards.me', 
 //'canvas_text'
