@@ -34,7 +34,7 @@ p1 = 'I write code for my own entertainment and the love I have for it. Professi
 p2 = '\
 Currently I am working with \
 <a href="https://martingrasser.com" target="_blank" rel="noopener noreferrer"> Martin Grasser </a> at his \
-<a href="https://andrepeat.com" target="_blank" rel="noopener noreferrer"> And Repeat Studio </a> as a Creative Developer, \
+<a href="https://andrepeat.com" target="_blank" rel="noopener noreferrer"> And Repeat Studio </a> as a Creative Technologist, \
 working on some interesting projects.'
 
 '<a href="https://www.artblocks.io/user/0x616fc752e4d9503b1b65b51f1113003ab2256ce9" target="_blank" rel="noopener noreferrer"> Generative Art </a>\
