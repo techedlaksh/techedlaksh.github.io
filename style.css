@@ -1,29 +1,76 @@
 @font-face {
     font-family: "iAWriter";
-    src: url("assets/iAWriterMonoS-Regular.ttf");
-    font-weight: 400;
+    src: url("assets/iAWriterDuoV.ttf");
     font-style: normal;
 }
 
 @font-face {
     font-family: "iAWriter";
-    src: url("assets/iAWriterMonoS-Italic.ttf");
-    font-weight: 400;
+    src: url("assets/iAWriterDuoV-Italic.ttf");
     font-style: italic;
 }
 
 @font-face {
-    font-family: "iAWriter";
-    src: url("assets/iAWriterMonoS-BoldItalic.ttf");
-    font-weight: 700;
-    font-style: italic;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('assets/InterVariable.ttf');
 }
 
 @font-face {
-    font-family: "iAWriter";
-    src: url("assets/iAWriterMonoS-Bold.ttf");
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100 900;
+  src: url('assets/InterVariable-Italic.ttf');
+}
+
+@font-face {
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('assets/FigtreeVariable.ttf');
+}
+
+@font-face {
+  font-family: "Figtree";
+  font-style: italic;
+  font-weight: 100 900;
+  src: url('assets/FigtreeVariable-Italic.ttf');
+}
+
+@font-face {
+  font-family: "MonaSans";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('assets/MonaSansVariable.ttf');
+}
+
+@font-face {
+  font-family: "MonaSans";
+  font-style: italic;
+  font-weight: 100 900;
+  src: url('assets/MonaSansVariable-Italic.ttf');
+}
+
+@font-face {
+  font-family: "HubotSans";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('assets/HubotSansVariable.ttf');
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('assets/ManropeVariable.ttf');
+}
+
+@font-face {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('assets/SatoshiVariable.ttf');
 }
 
 * > * {
@@ -39,7 +86,11 @@ body {
     margin: 0px;
     padding: 0px;
     /* font-weight: bold; */
-    font-family: "iAWriter", monospace;
+    /* font-family: "iAWriter", "Helvetica"; */
+    /* font-family: "HubotSans", "MonaSans", "Figtree", "Inter", "Helvetica"; */
+    /* font-family: "HubotSans", "Helvetica"; */
+    font-family: "Manrope", "Helvetica";
+    /* font-family: "Satoshi", "Helvetica"; */
 }
 
 a {
