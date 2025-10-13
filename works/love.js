@@ -171,12 +171,13 @@ mediaItems.forEach((item) => {
     moduleMedia.style.height = item.size.h
 
     if (Array.isArray(item.thumbnail)) {
-        item.thumbnail.forEach((subItem) => {
+        item.thumbnail.forEach((subItem, ix) => {
             const itemName = subItem
             const media = addMedia(itemName)
             media.style.width = item.size.divide
             media.style.height = 'auto'
             media.style.paddingBottom = '.5em'
+            // TODO: last element also gets padding, fix this
             media.style.paddingRight = '.5em'
             moduleMedia.appendChild(media)
         })

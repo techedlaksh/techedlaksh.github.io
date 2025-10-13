@@ -1,12 +1,79 @@
 @import url("../style.css");
 
 @media (orientation: portrait) {
+    .main {
+        margin-right: 0em;
+    }
+
     .work-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         grid-gap: 1em 0.5em;
+        margin-right: 1em;
     }
+
+    .module-page > * {
+        text-align: start;
+        text-justify: none;
+    }
+
+    .module-page-heading > * {
+        margin: 0;
+    }
+
+    .module-page {
+        width: 100%;
+        height: 100%;
+    }
+
+    .module-page-heading {
+        font-size: 1.2em;
+        margin-top: 1em;
+        margin-bottom: 3em;
+    }
+
+    .attributes {
+        display: flex;
+        flex-direction: column;
+        /* justify-self: flex-start; */
+        /* height: fit-content; */
+    }
+
+    .attribute {
+        padding-right: 3em;
+        display: flex;
+        justify-self: flex-start;
+        align-items: baseline;
+    }
+
+    .attr-category {
+        padding-right: .3em;
+        font-weight: 500;
+        margin: 0;
+        min-width: 3.6em;
+    }
+
+    .attr-items {
+        margin: 0;
+    }
+
+    .media-grid {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .module-media {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        padding-right: 1em;
+        padding-bottom: 1em;
+    }
+
 }
 
 @media (orientation: landscape) {

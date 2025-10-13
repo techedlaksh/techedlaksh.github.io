@@ -71,8 +71,6 @@ mediaItems.forEach((item) => {
     // const moduleCardMedia = createElement('', 'module-media-media')
     moduleMedia.style.width = item.size.w
     moduleMedia.style.height = item.size.h
-    // moduleMedia.style.paddingLeft = '1em'
-    moduleMedia.style.paddingRight = '1em'
 
     const itemPath = `works/portraits/${item.thumbnail}`
     let media
