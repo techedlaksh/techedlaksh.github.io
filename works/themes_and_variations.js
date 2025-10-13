@@ -148,7 +148,6 @@ mediaItems.forEach((item) => {
     const moduleMedia = createElement('', createClassString(['module-media']))
     moduleMedia.style.width = item.size.w
     moduleMedia.style.height = item.size.h
-    moduleMedia.style.paddingRight = '1em'
 
     if (Array.isArray(item.thumbnail)) {
         item.thumbnail.forEach((subItem) => {

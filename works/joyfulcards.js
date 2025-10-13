@@ -67,11 +67,8 @@ mediaItems = [
 
 mediaItems.forEach((item) => {
     const moduleMedia = createElement('', createClassString(['module-media']))
-    // const moduleCardMedia = createElement('', 'module-media-media')
     moduleMedia.style.width = item.size.w
     moduleMedia.style.height = item.size.h
-    // moduleMedia.style.paddingLeft = '1em'
-    moduleMedia.style.paddingRight = '1em'
 
     const itemPath = `works/joyfulcards/${item.thumbnail}`
     let media
